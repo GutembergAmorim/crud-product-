@@ -37,6 +37,27 @@ function handleDelete(id) {
 
 function handleEdit(id) {
   alert(products[id]['nome']);
+  // products.splice(id, 1);
+  // tableData.innerHTML = "";
+  // const html = (tableData.innerHTML += `
+  //       <tr class="even:bg-[#f2f2f2] odd:bg-white">
+  //           <td class="p-3">${nome}</td>
+  //           <td class="p-3">${preco}</td>
+  //           <td class="p-3">${quantidade}</td>
+  //           <td class="text-center p-3">${total}</td>
+  //           <td class="flex gap-2 items-center justify-center p-3">
+  //             <button onclick="handleEdit(${id})" class="py-1 px-2 bg-sky-700 text-white rounded-md">
+  //               Editar
+  //             </button>
+  //             <button onclick="handleDelete(${id})" class="py-1 px-2 bg-red-800 text-white rounded-md">
+  //               Deletar
+  //             </button>
+  //           </td>
+  //       </tr>
+  //   `);
+
+  // return html;
+
 }
 
 function createTableBodyRow(nome, preco, quantidade, total, id) {
